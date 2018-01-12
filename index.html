@@ -4,6 +4,7 @@
     <title>Humans Impact on Climate</title>
     <link href="styles.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1">
   </head>
   <body>
     <section class="wrapper">
@@ -25,7 +26,7 @@
           <p class="menu-titles">Updates</p>
           <p class="sidebar-options"><img class="menu-icons" src="images/megaphone.svg" />ALERT</p>
           <p class="sidebar-options"><img class="menu-icons" src="images/news.svg" />HEADLINERS</p>
-          <p class="sidebar-options on-page"><img class="menu-icons" src="images/campaigns.svg" />CAMPAIGNS</p>
+          <p class="sidebar-options selected"><img class="menu-icons" src="images/campaigns.svg" />CAMPAIGNS</p>
           <p class="sidebar-options"><img class="menu-icons" src="images/star.svg" />SUCCESS</p>
           <p class="sidebar-options"><img class="menu-icons" src="images/swords.svg" />CHALLENGES</p>
         </section>
@@ -40,23 +41,25 @@
 
       <section class="right-pane">
         <nav class="top-left">
-          <section class="icon-box">
-            <img class="nav-icons" src="images/navigation.svg" alt="Navigate" />
-          </section>
-          <section class="search-box">
-            <input class="search-input" type="text" placeholder="Search" aria-label="Enter your search keyword here" />
-          </section>
-        </nav>
-        <nav class="top-right">
-          <section class="icon-box">
-            <img class="nav-icons" src="images/contacts.svg" alt="See your contacts" />
-          </section>
-          <section class="icon-box on-page">
-            <img class="nav-icons" src="images/messages.svg" alt="View messages" />
-          </section>
-          <section class="icon-box">
-            <img class="nav-icons" src="images/settings.svg" alt="Change settings" />
-          </section>
+          <div class="top-navbar">
+            <section class="icon-box top-left-box">
+              <img class="nav-icons" src="images/navigation.svg" alt="Navigate" />
+            </section>     
+            <section class="search-box">
+              <input class="search-input" type="text" placeholder="Search" aria-label="Enter your search keyword here" />
+            </section>
+          </nav>
+          <nav class="top-right">
+            <section class="icon-box">
+              <img class="nav-icons" src="images/contacts.svg" alt="See your contacts" />
+            </section>
+            <section class="icon-box selected">
+              <img class="nav-icons" src="images/messages.svg" alt="View messages" />
+            </section>
+            <section class="icon-box">
+              <img class="nav-icons" src="images/settings.svg" alt="Change settings" />
+            </section>
+          </div>
         </nav>
         <header>
           <h1>Humans Impact on Climate Change</h1>
@@ -78,18 +81,21 @@
               <img class="edit-icons" src="images/trash.svg" alt="Delete post" />
             </button>
           </section>
-          <ul>
-            <li class="on-page">EVIDENCE</li>
-            <li>CAUSES</li>
-            <li>EFFECTS</li>
-            <li>SCIENTIFIC CONCENSUS</li>
-            <li>VITAL SIGNS</li>
-            <li>FAQ & FORUMS</li>
-            <li>SOLUTIONS</li>
-          </ul> 
+          <div class="overchart-nav">
+            <ul>
+              <li class="selected">EVIDENCE</li>
+              <li>CAUSES</li>
+              <li>EFFECTS</li>
+              <li>SCIENTIFIC CONCENSUS</li>
+              <li>VITAL SIGNS</li>
+              <li>FAQ &amp; FORUMS</li>
+              <li>SOLUTIONS</li>
+            </ul> 
+          </div> <!-- overchart-nav -->
         </header>      
         <section class="stats">
           <section class="donut-charts">
+            <div class="donut-container">
               <svg class="temperature donuts" width="180px" height="180px" viewBox="0 0 42 42">
                 <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
                 <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#D2D3D4" stroke-width="3"></circle>
@@ -117,11 +123,17 @@
                   <text x="50%" y="50%" class="chart-label">Land Ice Mass</text>
                 </g>
               </svg>
-            <button class="oval-btn underchart donut-btn">SEE ALL OTHER 257 CHARTS</button>
+            </div>
+            <section class="underchart">
+              <button class="oval-btn underchart donut-btn">SEE ALL OTHER 257 CHARTS</button>
+            </section> <!-- underchart -->
+
           </section> <!-- donut-charts -->
           <section class="bargraph">
             <img class="extreme-weather" src="images/extremity.png" />
-            <button class="oval-btn underchart graph-btn">ANNUAL TEMPERATURE ANOMALY</button>
+            <section class="underchart">
+              <button class="oval-btn underchart graph-btn">ANNUAL TEMPERATURE ANOMALY</button>
+            </section> <!-- underchart -->
           </section> <!-- bargraph -->
         </section> <!-- stats -->
 
@@ -131,57 +143,76 @@
         </section> -->
 
         <section class="expanded-menu">
-          <table class="expanded edit-campaign">
-            <thead>
-              <th class="table-title">CAMPAIGN DESCRIPTION</th>
-              <th class="table-text"><button class="edit-button"><img class="edit-icon" src="images/edit-2.svg">EDIT</button></th>
-            </thead>
-            <tr>
-              <td class="table-title underlined">TARGET</td>
-              <td class="table-text underlined">Rainforest Restoration</td>
-            </tr>
-            <tr>
-              <td class="table-title underlined">REGIONS</td>
-              <td class="table-text underlined">Sumatra (Tropical)</td>
-            </tr>
-            <tr>
-              <td class="table-title underlined">GOALS</td>
-              <td class="table-text underlined">American investors divest from agricultural acitivites in these regions, local authorities enforce that deforestation is by all means prohibited in all rehabilitation areas. Investors and locals engage in a more meaningful and intimate business relationship, a smaller scale production. Increase in crops rotation</td>
-            </tc>
-            </tr>
-            <tr>
-              <td class="table-title underlined">STATUS</td>
-              <td class="table-text underlined">Open</td>
-            </tr>
-            <tr>
-              <td class="table-title underlined">ALTERNATIVE OFFERS</td>
-              <td class="table-text underlined">Sustainable resources for local farming. Smaller-scale businesses. Tree farm harvests and more usage of 100% recycled materials</td>
-            </tr>
-            <tr>
-              <td class="table-title underlined">AFFILIATION</td>
-              <td class="table-text underlined">World Bank, Conservation International, WWF(World Wild Fund)</td>
-            </tr>
-            <tr>
-              <td class="table-title underlined">CAMPAIGN LEAD</td>
-              <td class="table-text underlined"><img class="campaign-lead-img" src="images/moondog.png" /><p class="name">Chantakahn Saetehn</p></td>
-            </tr>
-            <tr>
-              <td class="table-title">PROPOSED BUDGET</td>
-               <td class="table-text">$300,000</td>
-          </table>
-          <aside class="contact-panel">
-            <section class="social-media">
-              <button class="facebook media-btn"><img class="facebook-logo media-logo" src="images/fb-logo.png">Post to Facebook</button>
-              <button class="twitter media-btn"><img class="twitter-logo media-logo" src="images/twitter-logo.svg">Tweet this Campaign</button>
-              <button class="linkedin media-btn"><img class="linkedin-logo media-logo" src="images/linkedin-logo.png">Post to LinkedIn</button> 
-            </section>
+        
+          <section class="edit-campaign-wrapper">
+            <table class="edit-campaign">
+              <thead>
+                <th class="table-title">CAMPAIGN DESCRIPTION</th>
+                <th class="table-text">
+                  <button class="edit-button">
+                    <img class="edit-icon" src="images/edit-2.svg" />EDIT
+                  </button>
+                </th>
+              </thead>
+              <!-- <main> -->
+                <tr>
+                  <td class="table-title underlined">TARGET</td>
+                  <td class="table-text underlined">Rainforest Restoration</td>
+                </tr>
+                <tr>
+                  <td class="table-title underlined">REGIONS</td>
+                  <td class="table-text underlined">Sumatra (Tropical)</td>
+                </tr>
+                <tr>
+                  <td class="table-title underlined">GOALS</td>
+                  <td class="table-text underlined">American investors divest from agricultural acitivites in these regions, local authorities enforce that deforestation is by all means prohibited in all rehabilitation areas. Investors and locals engage in a more meaningful and intimate business relationship, a smaller scale production. Increase in crops rotation
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-title underlined">STATUS</td>
+                  <td class="table-text underlined">Open</td>
+                </tr>
+                <tr>
+                  <td class="table-title underlined">ALTERNATIVE OFFERS</td>
+                  <td class="table-text underlined">Sustainable resources for local farming. Smaller-scale businesses. Tree farm harvests and more usage of 100% recycled materials</td>
+                </tr>
+                <tr>
+                  <td class="table-title underlined">AFFILIATION</td>
+                  <td class="table-text underlined">World Bank, Conservation International, WWF(World Wild Fund)</td>
+                </tr>
+                <tr>
+                  <td class="table-title underlined">CAMPAIGN LEAD</td>
+                  <td class="table-text underlined">
+                    <img class="campaign-lead-img" src="images/moondog.png" />
+                    <p class="name">Chantakahn Saetehn</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-title">PROPOSED BUDGET</td>
+                  <td class="table-text">$300,000</td>
+                </tr>
+              <!-- </main> -->
+            </table>
+          </section> <!-- edit campaign wrapper -->
 
+          <aside class="contact-panel">
+            <section class="social-media"> 
+              <button class="facebook media-btn">
+                <img class="facebook-logo media-logo" src="images/fb-logo.png" />Post to Facebook
+              </button>
+              <button class="twitter media-btn">
+                <img class="twitter-logo media-logo" src="images/twitter-logo.svg" />Tweet this Campaign
+              </button>
+              <button class="linkedin media-btn">
+                <img class="linkedin-logo media-logo" src="images/linkedin-logo.png" />Post to LinkedIn
+              </button> 
+            </section> <!-- social media -->
             <section class="link-section">
               <section class="link-1 link-blocks">
                 <p class="bold-text"><img class="link-icons" src="images/link.svg" />SHARE CAMPAIGN LINK</p>
                 <p>Share links because the more people see, the more engagement you may receive</p>
                 <section class="copy-links">
-                  <input class="link" type="text" aria-lable="campaign link to share" placeholder="http://planetwarriors.com/dontsuck..." />
+                  <input class="link-inputs" type="text" aria-lable="campaign link to share" placeholder="http://planetwarriors.com/dontsuck..." />
                   <button class="copy-btn">Copy</button>
                 </section>
               </section>
@@ -189,23 +220,28 @@
                 <p class="bold-text"><img class="link-icons" src="images/add.svg" />ADD CAMPAIGN BUTTON</p>
                 <p>Useful code snippet that adds a button to this campaign on your websites or blogs</p>
                 <section class="copy-links">
-                  <input class="link" type="text" aria-lable="campaign link to share" placeholder="http://planetwarriors.com/loveothers.." />
+                  <input class="link-inputs" type="text" aria-lable="campaign link to share" placeholder="http://planetwarriors.com/loveothers.." />
                   <button class="copy-btn">Copy</button>
                 </section>
               </section>
-              
               <section class="link-3 link-blocks">
-                <p class="bold-text"><img class="link-icons" src="images/send.svg" />UPLOAD VIA MAIL</p>
-                <p>You can upload multiple resources to this campaign by emailing to the address below</p>
-                  <input class="email" type="text" aria-lable="campaign link to share" placeholder="planetwarriors@begoodearthling.." />
+                <p class="bold-text">
+                  <img class="link-icons" src="images/send.svg" />UPLOAD VIA MAIL
+                </p>
+                <p>You can upload multiple resources to this campaign by emailing to the address below
+                </p>
+                <input class="email" type="text" aria-lable="campaign link to share" placeholder="planetwarriors@begoodearthling.." />
               </section>
-
-              </section> <!-- link-section -->
-            </section> <!-- social media -->
-          </aside>
+            </section> <!-- link-section -->
+          </aside> <!-- contact-panel -->
 
         </section> <!-- expanded menu -->
       </section> <!-- right-pane -->
     </section> <!-- wrapper -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+    <script type="text/javascript" src="script.js"></script>
+  
   </body>
 </html>
