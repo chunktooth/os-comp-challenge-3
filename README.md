@@ -12,5 +12,8 @@ When reducing screen width, top nav bar border overlaps with buttons floated on 
 ## Wins
 Discovered ```border-collapse: collapse``` so that the table's bottom borders don't leave a gap in between two different table datas. Got to learn how to put together donut charts. The elements with icons centered inside on top right cornor have small gaps in between them, so instead of using ```display: inline-block``` I had to add code snippet ```display: block, float: right```. Also found out that to center an image inside a button, use ```position: relative``` then adjust top and bottom pixels accordingly
 
+## My Static Comp
 ![MA COMP](https://github.com/chunktooth/os-comp-challenge-3/blob/master/os-comp-challenge-3.png)
+
+## The Original Comp
 ![YO COMP](https://github.com/chunktooth/os-comp-challenge-3/blob/master/static-comp-3-original.png)
